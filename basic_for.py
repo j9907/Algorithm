@@ -58,10 +58,58 @@
 #     print(f'{n}*{i}={n*i}')
 
 #문제9
-n = int(input())
-sum = 0
-for i in range(n):
-    a = map(int,input().split())
-    sum += a[i]
+# n = int(input())
+# a = list(map(int,input().split()))
+# count = 0
+# for i in range(n):
+#     if a[i] % 2 == 0:
+#         count += 1
 
-print(sum)
+# print(count)
+
+
+# a = [int(a) for a in input().split()]
+#문제 10
+# a = 시작값 , b = 곱할값 , c = 더할값, n = 몇항인지
+# a,b,c,n = map(int,input().split())
+# sum = int(a)
+# for i in range(1,int(n)):
+#         sum = sum * int(b) + int(c)
+
+# print(sum)
+
+# 문제11
+# n = int(input())
+# count = 0
+# for i in range(1,n+1):
+#     if i % 10 == 1:
+#         count += 1
+
+# print(count)
+
+# n = int(input())
+# x = list(map(int,input().split()))
+# print(max(x))
+
+n,m = map(int,input().split())
+# 홀수 = i
+# 짝수 = i * 10
+# n,m = 리스트의 n값
+# list = []
+# a = 1
+# if n > m:
+#     for i in range(n):
+#         b = int(a) * 10
+#         list.append(int(a))
+#         list.append(int(b))
+#         a += 1
+# else:
+#     for i in range(m):
+#         b = int(a) * 10
+#         list.append(int(a))
+#         list.append(int(b))
+#         a += 1
+# print(list[n-1] + list[m-1])
+
+
+   

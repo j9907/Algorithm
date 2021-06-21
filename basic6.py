@@ -19,14 +19,14 @@
 #     print('비만')
 
 # 터널통과하기2
-# a,b,c = map(int,input().split())
-# if a > 170:
-#     if b > 170:
-#         if c > 170:
-#             print('PASS')
-#         else:
-#             print(f"CRASH {c}")
-#     else:
-#         print(f'CRASH {b}')
-# else:
-#     print(f'CRASH {a}')
+a,b,c = map(int,input().split())
+if a > 170:
+    if b > 170:
+        if c > 170:
+            print('PASS')
+        else:
+            print(f"CRASH {c}")
+    else:
+        print(f'CRASH {b}')
+else:
+    print(f'CRASH {a}')

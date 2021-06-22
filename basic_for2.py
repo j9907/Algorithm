@@ -1,3 +1,4 @@
+import math
 # n = int(input())
 # list = []
 # for i in range(1,n+1):
@@ -71,24 +72,27 @@
 #     print('bad')
 
 # 암호 해독
+# n = 소수로 곱한 수
+
+
 n = int(input())
-list = []
-a = 0
-b = 0
-for i in range(2,n+1):
-    if n % i == 0:
-        list.append(i)
+a = []
+index = 0
+sq = int(math.sqrt(float(n)))
 
-for i in range(len(list)):
-    for j in range(len(list)):
-        if(list[i] * list[j] == n):
-            a = list[i]
-            b = list[j]
-            break
+for i in range(0, 30):
+    a.append(0)
 
-if a > b:
-    print(f'{b} {a}')
-elif b > a:
-    print(f'{a} {b}')
-elif a == 0 and b == 0:
+for i in range(2, sq+1):
+    while n % i == 0:
+        n /= i
+        a[index] = i
+        index += 1
+
+if n != 1:
+    a[index] = n
+    index += 1
+if index == 2:
+    print(int(a[0]), int(a[1]))
+else:
     print('wrong number')
